@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-const SignIn = () => {
-  const handleSignIn = (e) => {
+const SignUp = () => {
+  const handleSignUp = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
@@ -20,7 +20,7 @@ const SignIn = () => {
           />
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form onSubmit={handleSignIn} className="card-body">
+          <form onSubmit={handleSignUp} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -52,14 +52,15 @@ const SignIn = () => {
             </div>
             <div className="form-control mt-6">
               <button type="submit" className="btn btn-success">
-                Sign In
+                Sign Up
               </button>
             </div>
           </form>
+          <p className="text-center mb-5">Already have an account? <Link to='/login' className="text-success">Login</Link> </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

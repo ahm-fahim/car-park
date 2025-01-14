@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
   const navItem = (
@@ -54,6 +55,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <a className="btn btn-outline btn-success">Book Now</a>
+        <div className="dropdown dropdown-end">
+          <div tabIndex={0} role="button" className=" text-2xl m-1 ml-5"> <CgProfile /> </div>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><Link to="/login">Login</Link></li>
+              <li><Link to="/signup">Sign Up</Link></li>
+            </ul>
+        </div>
       </div>
     </div>
   );
