@@ -1,6 +1,6 @@
 [
     {
-      "_id": "1",
+      
       "service_title": "Engine Diagnostics",
       "description": "Comprehensive engine diagnostics to identify and resolve performance issues.",
       "cost": 150,
@@ -10,7 +10,7 @@
       "image_url": "https://images.pexels.com/photos/3807279/pexels-photo-3807279.jpeg"
     },
     {
-      "_id": "2",
+      
       "service_title": "Brake Repair",
       "description": "Complete brake system inspection and repair to ensure safety.",
       "cost": 200,
@@ -20,7 +20,7 @@
       "image_url": "https://images.pexels.com/photos/4489735/pexels-photo-4489735.jpeg"
     },
     {
-      "_id": "3",
+      
       "service_title": "Oil Change",
       "description": "Standard oil change with quality engine oil and filter replacement.",
       "cost": 50,
@@ -30,7 +30,7 @@
       "image_url": "https://www.armotors.ae/wp-content/uploads/2022/12/273573036_7802850506406937_7216629264745892296_n.jpg"
     },
     {
-      "_id": "4",
+      
       "service_title": "Tire Rotation",
       "description": "Professional tire rotation to extend tire life and improve performance.",
       "cost": 40,
@@ -40,7 +40,7 @@
       "image_url": "https://images.pexels.com/photos/3807278/pexels-photo-3807278.jpeg"
     },
     {
-      "_id": "5",
+      
       "service_title": "Battery Replacement",
       "description": "Quick and efficient battery testing and replacement services.",
       "cost": 120,
@@ -50,7 +50,7 @@
       "image_url": "https://images.pexels.com/photos/4489736/pexels-photo-4489736.jpeg"
     },
     {
-      "_id": "6",
+      
       "service_title": "Wheel Alignment",
       "description": "Accurate wheel alignment to ensure optimal vehicle handling.",
       "cost": 100,
