@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ serviceInfo }) => {
   const {
+    _id,
     service_title,
     description,
     cost,
@@ -20,7 +22,7 @@ const ServiceCard = ({ serviceInfo }) => {
         <h2 className="card-title">{service_title}</h2>
               <p className="text-success"><span className="font-bold">Price - </span>{ cost} $</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-success">Get In Details</button>
+          <Link to={`/checkout/${_id}`} className="btn btn-success">Checkout Now</Link>
         </div>
       </div>
     </div>
