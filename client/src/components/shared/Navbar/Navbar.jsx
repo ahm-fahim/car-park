@@ -69,7 +69,10 @@ return (
       <div className="dropdown dropdown-end">
         <div tabIndex={0} role="button" className=" text-2xl m-1 ml-5"> <CgProfile /> </div>
         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-          {user?.email ? <li> <Link onClick={handleSignOut}>Sign Out</Link> </li> : <li><Link to="/login">Sign In</Link></li>}
+          {user?.email ? <>
+            <li> <Link onClick={handleSignOut}>Sign Out</Link> </li>
+            <li> <Link  to ="/bookings">My Bookings</Link> </li>
+          </> : <li><Link to="/login">Sign In</Link></li>}
           <li><Link to="/signup">Sign Up</Link></li>
         </ul>
       </div>
