@@ -10,7 +10,6 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    const user = { email, password };
 
     signInUser(email, password)
       .then(result => {
@@ -19,7 +18,6 @@ const Login = () => {
       })
       .then(error => console.log(error));
 
-    console.log(user);
   };
 
   return (
@@ -39,6 +37,7 @@ const Login = () => {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="email"
                 className="input input-bordered"
                 required
@@ -50,6 +49,7 @@ const Login = () => {
               </label>
               <input
                 type="password"
+                name="password"
                 placeholder="password"
                 className="input input-bordered"
                 required
